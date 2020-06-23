@@ -1,112 +1,29 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="Netflix Open Source">
-    <meta name="title" content="Netflix Open Source">
-    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2015.ico">
-
-    <title>Netflix Open Source Software Center</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Custom styles for this template -->
-    <link href="css/carousel.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
-  </head>
-  
-  <body>
-    <div class="masthead">
-      <div class="masthead__inner-wrap">
-        <div class="masthead__menu">
-          <nav id="site-nav" class="greedy-nav"> 
-            <ul class="visible-links">
-              <li class="masthead__menu-item masthead__menu-item--lg">
-                <a href="https://google.com/">
-                  "Your Name / Site Title"
-                </a>
-              </li>
-              <li class="masthead__menu-item">
-                <a href="https://google.com/">
-                  Publications
-                </a>
-              </li>
-              <li class="masthead__menu-item">
-                <a href="https://google.com/">
-                  Talks
-                </a>
-              </li>
-              <li class="masthead__menu-item">
-                <a href="https://google.com/">
-                  Teaching
-                </a>
-              </li>
-              <li class="masthead__menu-item">
-                <a href="https://google.com/">
-                  Portfolio
-                </a>
-              </li>
-               <li class="masthead__menu-item">
-                <a href="https://google.com/">
-                  CV
-                </a>
-               </li>
-             </ul>
-           </nav>
-         </div>
-          ::after
-       </div>
-     </div>
-     
-     <div id="main" role="main">
-        <div class="sidebar sticky">
-          <div itemscope="">
-             <div class="author__avatar"> 
-                <img src="https://some.png" class="author__avatar" alt="Your Sidebar Name">
-             </div>
-             <div class="author__content">
-                <h3 class="author__name">
-                  Your Sidebar Name
-                </h3>
-                <p class="author__bio">
-                  Bio for the sidebar
-                </p>
-             </div>
-             <div class="author__urls-wrapper"> 
-              <ul class="author__urls social-icons">
-                <li>
-                  "Location"
-                </li>
-                <li>
-                  <a href="https://twitter.com/cocacola">
-                    "Twitter"
-                  </a>
-                </li>
-                <li>
-                  <a href="https://google.com/">
-                    "Github
-                  </a>
-                </li>
-              </ul>
-             </div>
-           </div>
-          </div>
-        <article class="page" itemscope>
-          "Some text cuz yolo."
-        </article>
-  
-  
-    </body>
-  </html>
-  
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+		</head>
+		<body>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about">About</a></li>
+	        		<li><a href="/cv">CV</a></li>
+	        		<li><a href="/blog">Blog</a></li>
+	    		</ul>
+			</nav>
+			<div class="container">
+			
+			{{ content }}
+			
+			</div><!-- /.container -->
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
+	        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
+				</ul>
+			</footer>
+		</body>
+	</html>
